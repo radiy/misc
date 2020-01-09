@@ -1,0 +1,8 @@
+start - dotnet watch run
+
+sum - curl -X POST -H "Content-Type: application/json" -d '[1, 2, 3, 4, 5, 7, 8]' http://localhost:5000/task/sum
+> 10
+poli - curl http://localhost:5000/task/IsPolindrom?value=101
+> true
+add - curl -X POST -H "Content-Type: application/json" -d '{"X": {"Value":"1","Next": { "Value": "5" }}, "Y": {"Value": "2"}}' http://localhost:5000/task/add
+> 53
