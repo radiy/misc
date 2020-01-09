@@ -15,7 +15,6 @@ namespace task
         public static void Main(string[] args)
         {
             try {
-                Console.WriteLine(JsonConvert.SerializeObject(new Node<string>() { Value = "123" }));
                 CreateHostBuilder(args).Build().Run();
             }
             catch (Exception e) {
